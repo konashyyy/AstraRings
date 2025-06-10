@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buying.css">
+    <title>ASTRA</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="search-icon">🔍</div>
+            <a href="index.html">
+            <div class="logo">ASTRA</div>
+            </a>
+            <div class="cart-info">
+                <span>🛒 0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="product-section">
+            <div class="product-image">
+                <div>
+                    <img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL PANTHÈRE DE CARTIER - 3.png" alt="Anel Cativo Fillette Oripéis" />
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <div class="product-category">COLEÇÃO DIQUE</div>
+                <h1 class="product-title">ANEL CATIVO FILLETTE ORIPÉIS</h1>
+                <p class="product-description">
+                    Anel solitário em ouro 18k com diamante. 
+                    Design clássico e elegante, perfeito para ocasiões especiais. 
+                    Peça única e atemporal que combina sofisticação e delicadeza. 
+                    Acabamento impecável em ouro nobre com pedra de alta qualidade.
+                </p>
+                
+                <div class="product-options">
+                    <div class="size-selector">
+                        <label for="size">TAMANHO</label>
+                        <select id="size">
+                            <option>Selecione o tamanho</option>
+                            <option>14</option>
+                            <option>16</option>
+                            <option>18</option>
+                            <option>20</option>
+                        </select>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <label>QUANTIDADE</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                            <div class="quantity-display" id="quantity">1</div>
+                            <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="add-to-cart">ADICIONAR AO CARRINHO</button>
+                
+                <div class="product-details">
+                    <p>Material: Ouro 18k</p>
+                    <p>Pedra: Diamante natural</p>
+                    <p>Garantia: 1 ano</p>
+                    <p>Entrega: 5-7 dias úteis</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2 class="related-title">VOCÊ TAMBÉM PODE GOSTAR</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <div>
+                            <img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL LOVE COM PAVÉ.png" alt="Anel solitário ouro branco" />
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h3 class="product-card-title">Anel solitário ouro<br>branco e ródio branco</h3>
+                        <p class="product-card-price">A partir de R$ 2.890</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <div>
+                            <img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL TRINITY EM CERÂMICA, MODELO GRANDE.png" alt="Par de alianças" />
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h3 class="product-card-title">Par de alianças Serenity<br>Fit em ouro branco</h3>
+                        <p class="product-card-price">A partir de R$ 1.890</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <div>
+                            <img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL JUSTE UN CLOU MP DIA.png" alt="Aliança Serenity" />
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h3 class="product-card-title">Aliança Serenity 5 de<br>ouro branco</h3>
+                        <p class="product-card-price">A partir de R$ 1.290</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NOSSA EMPRESA</h3>
+                <ul>
+                    <li>Sobre nós</li>
+                    <li>Nossa história</li>
+                    <li>Sustentabilidade</li>
+                    <li>Trabalhe conosco</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>ATENDIMENTO</h3>
+                <ul>
+                    <li>Central de ajuda</li>
+                    <li>Política de troca</li>
+                    <li>Garantia</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>REDES SOCIAIS</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Pinterest</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-logo">
+            <div class="logo">ASTRA</div>
+            <div class="tagline">JOIAS</div>
+        </div>
+    </footer>
+
+    <script>
+        let quantity = 1;
+
+        function increaseQuantity() {
+            quantity++;
+            document.getElementById('quantity').textContent = quantity;
+        }
+
+        function decreaseQuantity() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById('quantity').textContent = quantity;
+            }
+        }
+    </script>
+</body>
+</html>
