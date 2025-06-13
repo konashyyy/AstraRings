@@ -89,3 +89,59 @@ class InfiniteCarousel {
                 new InfiniteCarousel(carousel);
             });
         });
+
+        document.getElementById('cartierup').addEventListener('click', function() {
+            const alvo = document.getElementById('cartierdown');
+            const deslocamento = 80;
+            const posicao = alvo.getBoundingClientRect().top + window.scrollY - deslocamento;
+
+        window.scrollTo({
+            top: posicao,
+            behavior: 'smooth'
+         });
+        });
+
+        document.getElementById('pandoraup').addEventListener('click', function() {
+            const alvo = document.getElementById('pandoradown');
+            const deslocamento = 80;
+            const posicao = alvo.getBoundingClientRect().top + window.scrollY - deslocamento;
+
+        window.scrollTo({
+            top: posicao,
+            behavior: 'smooth'
+         });
+        });
+
+        document.getElementById('tiffanyup').addEventListener('click', function() {
+            const alvo = document.getElementById('tiffanydown');
+            const deslocamento = 80;
+            const posicao = alvo.getBoundingClientRect().top + window.scrollY - deslocamento;
+
+        window.scrollTo({
+            top: posicao,
+            behavior: 'smooth'
+         });
+        });
+
+
+        document.getElementById('vancleefup').addEventListener('click', function() {
+            const alvo = document.getElementById('vancleefdown');
+            const deslocamento = 80;
+            const posicao = alvo.getBoundingClientRect().top + window.scrollY - deslocamento;
+
+        window.scrollTo({
+            top: posicao,
+            behavior: 'smooth'
+         });
+        });
+
+        document.getElementById('piagetup').addEventListener('click', function() {
+            const alvo = document.getElementById('piagetdown');
+            const deslocamento = 80;
+            const posicao = alvo.getBoundingClientRect().top + window.scrollY - deslocamento;
+
+        window.scrollTo({
+            top: posicao,
+            behavior: 'smooth'
+         });
+        });
