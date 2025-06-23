@@ -333,3 +333,4 @@ function decreaseQuantity() {
   profileSidebar.classList.toggle("active");
 }
 
+
