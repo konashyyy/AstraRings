@@ -7,16 +7,42 @@
     <title>ASTRA</title>
 </head>
 <body>
-    <header class="header">
+        <header class="header">
         <div class="header-container">
             <span class="search-icon"><img src="IMG/lupa.png" alt="search" class="header-icons"></span>
+
+<div id="profile-icon" onclick="toggleProfile()"><img src="IMG/perfil.png" alt="" class="header-icons"></div>
+
+<div id="profile-sidebar">
+  <span id="close-profile" onclick="toggleProfile()">←</span>
+
+  <div id="profile-content">
+    <img src="IMG/index-default-img-perfil.webp" alt="User" class="profile-pic" class="header-icons">
+    <h3>User</h3>
+
+    <button class="profile-btn">Acessar perfil</button>
+    <button class="profile-btn">Configurações</button>
+
+    <p class="profile-description">
+      Descubra os anéis importados mais desejados do mundo. Designs sofisticados, materiais raros e elegância atemporal.
+    </p>
+  </div>
+</div>
             <a href="index.html">
-                <div class="logo">ASTRA</div>   
+            <div class="logo">ASTRA</div>   
             </a>
             <div class="header-icons">
-                <span><img src="IMG/carrinho-de-compras.png" alt="Carrinho" class="header-icons"></span>
-                <span><img src="IMG/perfil.png" alt="Perfil" class="header-icons"></span>
-            </div>
+
+  <div id="cart-icon" onclick="toggleCart()"><img src="IMG/carrinho-de-compras.png" alt="" class="header-icons"></div>
+
+  <div id="cart-sidebar">
+    <span id="close-cart" onclick="toggleCart()">←</span>
+    <div id="cart-content">
+      <h2>Seu Carrinho</h2>
+      <p id="cart-status">Você não tem produtos no carrinho.</p>
+    </div>
+  </div>
+                
         </div>
     </header>
 

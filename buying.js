@@ -314,3 +314,22 @@ function decreaseQuantity() {
   const value = parseInt(qty.textContent);
   if (value > 1) qty.textContent = value - 1;
 }
+
+ function toggleCart() {
+      const cartSidebar = document.getElementById("cart-sidebar");
+      cartSidebar.classList.toggle("active");
+
+      // Simulação: produto no carrinho
+      const temProduto = false; // troque para true para simular carrinho com item
+      const texto = temProduto 
+        ? "Você tem 1 produto no carrinho." 
+        : "Você não tem produtos no carrinho.";
+
+      document.getElementById("cart-status").textContent = texto;
+    }
+
+    function toggleProfile() {
+  const profileSidebar = document.getElementById("profile-sidebar");
+  profileSidebar.classList.toggle("active");
+}
+
