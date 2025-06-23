@@ -144,4 +144,4 @@ class InfiniteCarousel {
             top: posicao,
             behavior: 'smooth'
          });
-        });
+        });90
