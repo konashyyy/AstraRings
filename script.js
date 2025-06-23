@@ -144,7 +144,7 @@ class InfiniteCarousel {
             top: posicao,
             behavior: 'smooth'
          });
-<<<<<<< HEAD
+
         });
 
         function toggleCart() {
@@ -164,6 +164,4 @@ class InfiniteCarousel {
   const profileSidebar = document.getElementById("profile-sidebar");
   profileSidebar.classList.toggle("active");
 }
-=======
-        });90
->>>>>>> 8145e24eb170b33dae42f01a0e6ea2585b0e0973
+
