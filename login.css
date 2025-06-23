@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+/* Cabeçalho */
+header {
+  padding: 30px 0 20px;
+  text-align: center;
+  font-size: 28px;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* Conteúdo principal */
+.login-container {
+  max-width: 380px;
+  margin: 50px auto 30px;
+  padding: 0 20px;
+}
+
+.login-container h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Aba Entrar/Registrar */
+.tab-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.tab-links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: border 0.3s;
+}
+
+.tab-links a.active {
+  border-color: #000;
+}
+
+/* Formulário */
+form label {
+  font-size: 13px;
+  display: block;
+  margin: 10px 0 4px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 14px;
+  background: none;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #d3d3d3;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #bcbcbc;
+}
+
+.forgot {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.forgot a {
+  color: #777;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Suporte */
+.support {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 12px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.footer-content a {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.footer-content a:hover {
+  color: #fff;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  align-self: center;
+}
+/* Esconde formulário de registro por padrão */
+.hidden-form {
+  display: none;
+}
+
+.active-form {
+  display: block;
+}
