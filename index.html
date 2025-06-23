@@ -9,15 +9,15 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <!-- Ícone do perfil -->
-<div id="profile-icon" onclick="toggleProfile()">👤</div>
+            <span class="search-icon"><img src="IMG/lupa.png" alt="search" class="header-icons"></span>
 
-<!-- Aba lateral do perfil -->
+<div id="profile-icon" onclick="toggleProfile()"><img src="IMG/perfil.png" alt="" class="header-icons"></div>
+
 <div id="profile-sidebar">
   <span id="close-profile" onclick="toggleProfile()">←</span>
 
   <div id="profile-content">
-    <img src="IMG/index-default-img-perfil.webp" alt="User" class="profile-pic">
+    <img src="IMG/index-default-img-perfil.webp" alt="User" class="profile-pic" class="header-icons">
     <h3>User</h3>
 
     <button class="profile-btn">Acessar perfil</button>
@@ -32,10 +32,9 @@
             <div class="logo">ASTRA</div>   
             </a>
             <div class="header-icons">
-                 <!-- Ícone do carrinho -->
-  <div id="cart-icon" onclick="toggleCart()">🛒</div>
 
-  <!-- Aba lateral do carrinho -->
+  <div id="cart-icon" onclick="toggleCart()"><img src="IMG/carrinho-de-compras.png" alt="" class="header-icons"></div>
+
   <div id="cart-sidebar">
     <span id="close-cart" onclick="toggleCart()">←</span>
     <div id="cart-content">
