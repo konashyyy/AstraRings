@@ -176,6 +176,7 @@
         .products-carousel {
             position: relative;
             overflow: hidden;
+            height: 320px;
             
         }
 
