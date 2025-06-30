@@ -272,25 +272,57 @@
         }
 
         .footer {
-            background-color: #2c2c2c;
+            background-color: #333;
             color: white;
             padding: 40px 0;
-            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
         }
 
         .footer-logo {
-            font-size: 32px;
-            font-weight: bold;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #555;
         }
 
-        .footer-text {
-            font-size: 14px;
-            color: #ccc;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
+        .footer-logo .logo {
+            font-size: 36px;
+            letter-spacing: 4px;
+            color: white;
+        }
+
+        .footer-logo .tagline {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #999;
+            margin-top: 10px;
         }
 
         /* Ícone de perfil */
