@@ -165,3 +165,46 @@ class InfiniteCarousel {
   profileSidebar.classList.toggle("active");
 }
 
+function updateCartSidebar() {
+  const cartItems = document.getElementById("cart-items");
+  const cartStatus = document.getElementById("cart-status");
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  cartItems.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartStatus.textContent = "Você não tem produtos no carrinho.";
+    return;
+  }
+
+  cart.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.classList.add("cart-item");
+
+    li.innerHTML = `
+      <img src="${item.image}" alt="${item.title}">
+      <div class="cart-item-info">
+        <strong>${item.title}</strong><br>
+        Tamanho ${item.size}<br>
+        Quantidade: ${item.quantity}
+      </div>
+      <button class="cart-item-remove" onclick="removeFromCart(${index})">🗑️</button>
+    `;
+
+    cartItems.appendChild(li);
+  });
+
+  cartStatus.textContent = "";
+}
+
+const searchIcon = document.querySelector(".search-icon");
+const searchInput = document.getElementById("search-input");
+
+searchIcon.addEventListener("click", () => {
+  if (searchInput.style.display === "none") {
+    searchInput.style.display = "block";
+    searchInput.focus();
+  } else {
+    searchInput.style.display = "none";
+  }
+});
