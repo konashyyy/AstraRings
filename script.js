@@ -113,3 +113,56 @@
         behavior: "smooth",
       });
     });
+
+    class InfiniteCarousel {
+  constructor(carouselElement) {
+    this.carousel = carouselElement;
+    this.container = this.carousel.querySelector(".products-container");
+    this.prevBtn = this.carousel.querySelector(".prev");
+    this.nextBtn = this.carousel.querySelector(".next");
+    this.cards = Array.from(this.container.children);
+    this.cardWidth = 240;
+    this.currentIndex = 0;
+    this.maxIndex = this.cards.length - Math.floor(this.carousel.offsetWidth / this.cardWidth);
+
+    this.updateCarousel();
+    this.setupEventListeners();
+    window.addEventListener("resize", () => this.handleResize());
+  }
+
+  handleResize() {
+    this.maxIndex = this.cards.length - Math.floor(this.carousel.offsetWidth / this.cardWidth);
+    this.updateCarousel();
+  }
+
+  setupEventListeners() {
+    this.prevBtn.addEventListener("click", () => this.prev());
+    this.nextBtn.addEventListener("click", () => this.next());
+  }
+
+  updateCarousel() {
+    const translateX = -this.currentIndex * this.cardWidth;
+    this.container.style.transform = `translateX(${translateX}px)`;
+  }
+
+  next() {
+    if (this.currentIndex < this.maxIndex) {
+      this.currentIndex++;
+      this.updateCarousel();
+    } else {
+      alert("Você chegou ao fim do carrossel.");
+    }
+  }
+
+  prev() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.updateCarousel();
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll(".products-carousel");
+  carousels.forEach((carousel) => new InfiniteCarousel(carousel));
+});
