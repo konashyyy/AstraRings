@@ -114,6 +114,7 @@
       });
     });
 
+
     class InfiniteCarousel {
   constructor(carouselElement) {
     this.carousel = carouselElement;
@@ -166,3 +167,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const carousels = document.querySelectorAll(".products-carousel");
   carousels.forEach((carousel) => new InfiniteCarousel(carousel));
 });
+
+   const searchWrapper = document.getElementById('search-wrapper');
+  const searchIcon = document.getElementById('search-icon');
+  const searchInput = document.getElementById('search-input');
+
+  searchIcon.addEventListener('click', (e) => {
+    e.stopPropagation(); // impede fechar imediatamente
+    searchWrapper.classList.toggle('active');
+    if (searchWrapper.classList.contains('active')) {
+      searchInput.focus();
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!searchWrapper.contains(e.target)) {
+      searchWrapper.classList.remove('active');
+    }
+  });
+

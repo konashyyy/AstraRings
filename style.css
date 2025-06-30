@@ -43,6 +43,41 @@
             color: #666;
         }
 
+      .search-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  #search-input {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 200px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+  }
+
+  .search-wrapper.active #search-input {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Para melhor visual */
+  #search-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+
         .logo {
             font-size: 24px;
             font-weight: normal;
