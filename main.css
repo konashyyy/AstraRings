@@ -364,7 +364,7 @@
 #profile-icon {
   position: fixed;
   top: 13px;
-  right: 180px;
+  right: 5%;
   cursor: pointer;
   font-size: 23px;
 }
@@ -447,7 +447,7 @@
        /* ÍCONE DO CARRINHO */
          #cart-icon {
              top: 13px;
-             right: 210px;
+             right: 10%
              cursor: pointer;
              font-size: 23px;
              position: fixed;
