@@ -568,7 +568,7 @@
   background-color: #111;
 }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
             .hero-title {
                 font-size: 32px;
             }

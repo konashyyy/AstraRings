@@ -521,7 +521,7 @@
             margin-top: 10px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
             .product-section {
                 grid-template-columns: 1fr;
                 gap: 30px;
