@@ -16,8 +16,8 @@ let quantity = 1;
   cartier01: {
     image: "IMG/Cartier-20250603T230532Z-1-001/Cartier/ALIANÇA LOVE 8 DIAMANTES.png",
     category: "CARTIER",
-    name: "ANEL LOVE 8 DIAMANTES",
-    description: "Anel icônico da Cartier com 8 diamantes em ouro 18k. Símbolo eterno de amor e compromisso.",
+    name: "ANEL LOANTES",
+    description: "Anel icônico daVE 8 DIAM Cartier com 8 diamantes em ouro 18k. Símbolo eterno de amor e compromisso.",
     material: "Ouro 18k",
     pedra: "8 Diamantes naturais",
     garantia: "2 anos",

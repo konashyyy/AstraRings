@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>ASTRA</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="search-wrapper" id="search-wrapper">
+  <img src="IMG/lupa.png" alt="Pesquisar" id="search-icon" />
+  <input type="text" id="search-input" placeholder="Buscar..." />
+</div>
+
+<div id="profile-icon" onclick="toggleProfile()"><img src="IMG/perfil.png" alt="" class="header-icons"></div>
+
+<div id="profile-sidebar">
+  <span id="close-profile" onclick="toggleProfile()">←</span>
+
+  <div id="profile-content">
+    <img src="IMG/index-default-img-perfil.webp" alt="User" class="profile-pic" class="header-icons">
+    <h3>User</h3>
+
+    <button class="profile-btn">Acessar perfil</button>
+    <button class="profile-btn">Configurações</button>
+
+    <p class="profile-description">
+      Descubra os anéis importados mais desejados do mundo. Designs sofisticados, materiais raros e elegância atemporal.
+    </p>
+  </div>
+</div>
+            <a href="main.html">
+            <div class="logo">ASTRA</div>   
+            </a>
+            <div class="header-icons">
+
+  <div id="cart-icon" onclick="toggleCart()"><img src="IMG/carrinho-de-compras.png" alt="" class="header-icons"></div>
+
+  <div id="cart-sidebar">
+    <span id="close-cart" onclick="toggleCart()">←</span>
+    <div id="cart-content">
+  <h2>Seu Carrinho</h2>
+  <ul id="cart-items"></ul>
+  <p id="cart-status">Você não tem produtos no carrinho.</p>
+  <button id="checkout-btn">Finalizar Compra</button>
+</div>
+
+                
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="chocolate-eggs"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">PROMOÇÃO</h1>
+            <h2 class="hero-subtitle">DE PÁSCOA</h2>
+            <p class="hero-discount">ATÉ 50% OFF</p>
+            <p class="hero-brand">Astra Rings</p>
+        </div>
+    </section>
+
+    <section class="brands-section">
+        <div class="brands-container">
+            <div class="brand-logo" id="cartierup">CARTIER</div>
+            <div class="brand-logo" id="pandoraup">PANDORA</div>
+            <div class="brand-logo" id="tiffanyup">TIFFANY & Co.</div>
+            <div class="brand-logo" id="vancleefup">VAN CLEEF AND ARPELS</div>
+            <div class="brand-logo" id="piagetup">PIAGET</div>
+        </div>
+    </section>
+
+    <main class="products-section">
+        <div class="category" id="cartierdown">
+            <h2 class="category-title">Cartier</h2>
+            <div class="products-carousel" data-category="cartier">
+                <button class="carousel-nav prev">‹</button>
+                <div class="products-container">
+                    <a href="buying.html?id=cartier01">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ALIANÇA LOVE 8 DIAMANTES.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL CARTIER LOVE 8 DIAMANTES</h3>
+                        <p class="product-description">A partir de<br>R$ 2.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=cartier02">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL CLASH DE CARTIER MODELO MÉDIO.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL DE CARTIER CLASH DE CARTIER</h3>
+                        <p class="product-description">A partir de<br>R$ 4.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=cartier03">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL ECROU DE CARTIER.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL CARTIER ECROU DE CARTIER</h3>
+                        <p class="product-description">A partir de<br>R$ 3.499</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=cartier04">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL ETINCELLE DE CARTIER.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL ETINCELLE DE CARTIER</h3>
+                        <p class="product-description">A partir de<br>R$ 5.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=cartier05">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Cartier-20250603T230532Z-1-001/Cartier/ANEL JUSTE UN CLOU MP DIA.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL CARTIER JUSTE UN CLOU MP DIA</h3>
+                        <p class="product-description">A partir de<br>R$ 8.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                </div>
+                <button class="carousel-nav next">›</button>
+            </div>
+        </div>
+
+        <div class="category" id="pandoradown">
+            <h2 class="category-title">Pandora</h2>
+            <div class="products-carousel" data-category="pandora">
+                <button class="carousel-nav prev">‹</button>
+                <div class="products-container">
+                    <a href="buying.html?id=pandora01">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Pandora-20250603T230542Z-1-001/Pandora/1/343783-1200-1200-removebg-preview (1).png" alt="Product"></div>
+                        <h3 class="product-name">ANEL DE DIMA<br>2 QUILATES</h3>
+                        <p class="product-description">A partir de<br>R$ 1.299</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=pandora02">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Pandora-20250603T230542Z-1-001/Pandora/2/343777-1200-1200-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL DE PRINCESA<br>ROSA ENCANTADA</h3>
+                        <p class="product-description">A partir de<br>R$ 1.499</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=pandora03">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Pandora-20250603T230542Z-1-001/Pandora/3/180830-1200-1200-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL DE FADAS<br>MÁGICO</h3>
+                        <p class="product-description">A partir de<br>R$ 1.799</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=pandora04">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Pandora-20250603T230542Z-1-001/Pandora/4/180964-1200-1200-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL DA ALICE<br>COLLECTION</h3>
+                        <p class="product-description">A partir de<br>R$ 1.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=pandora05">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Pandora-20250603T230542Z-1-001/Pandora/5/354231-1200-1200-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL CORAÇÕES<br>ROMÂNTICO</h3>
+                        <p class="product-description">A partir de<br>R$ 2.299</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                </div>
+                <button class="carousel-nav next">›</button>
+            </div>
+        </div>
+
+        <div class="category" id="tiffanydown">
+            <h2 class="category-title">Tiffany & Co.</h2>
+            <div class="products-carousel" data-category="tiffany">
+                <button class="carousel-nav prev">‹</button>
+                <div class="products-container">
+                    <a href="buying.html?id=tiffany01">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Tiffany & Co.-20250603T230547Z-1-001/Tiffany & Co_/1.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL SOLITÁRIO<br>TIFFANY SETTING</h3>
+                        <p class="product-description">A partir de<br>R$ 12.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=tiffany02">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Tiffany & Co.-20250603T230547Z-1-001/Tiffany & Co_/2.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL TIFFANY T<br>COLLECTION</h3>
+                        <p class="product-description">A partir de<br>R$ 8.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=tiffany03">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Tiffany & Co.-20250603T230547Z-1-001/Tiffany & Co_/3.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL TIFFANY LOVE<br>COLLECTION</h3>
+                        <p class="product-description">A partir de<br>R$ 15.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=tiffany04">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Tiffany & Co.-20250603T230547Z-1-001/Tiffany & Co_/4.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL TB SOLITAIRE<br>PLATINUM</h3>
+                        <p class="product-description">A partir de<br>R$ 18.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=tiffany05">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Tiffany & Co.-20250603T230547Z-1-001/Tiffany & Co_/5.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL ELSA PERETTI<br>DIAMONDS</h3>
+                        <p class="product-description">A partir de<br>R$ 22.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                </div>
+                <button class="carousel-nav next">›</button>
+            </div>
+        </div>
+
+        <div class="category" id="vancleefdown">
+            <h2 class="category-title">Van Cleef and Arpels</h2>
+            <div class="products-carousel" data-category="vancleef">
+                <button class="carousel-nav prev">‹</button>
+                <div class="products-container">
+                    <a href="buying.html?id=vancleef01">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Van Cleef & Arpels-20250603T230707Z-1-001/Van Cleef & Arpels/01.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL SWEET ALHAMBRA GOLD</h3>
+                        <p class="product-description">A partir de<br>R$ 9.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=vancleef02">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Van Cleef & Arpels-20250603T230707Z-1-001/Van Cleef & Arpels/02.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL ALHAMBRA<br>COLLECTION</h3>
+                        <p class="product-description">A partir de<br>R$ 15.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=vancleef03">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Van Cleef & Arpels-20250603T230707Z-1-001/Van Cleef & Arpels/03.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL FRIVOLE<br>DIAMONDS</h3>
+                        <p class="product-description">A partir de<br>R$ 25.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=vancleef04">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Van Cleef & Arpels-20250603T230707Z-1-001/Van Cleef & Arpels/04.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL LOTUS<br>COLLECTION</h3>
+                        <p class="product-description">A partir de<br>R$ 19.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=vancleef05">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Van Cleef & Arpels-20250603T230707Z-1-001/Van Cleef & Arpels/05.png" alt="Product"></div>
+                        <h3 class="product-name">ANEL PERLÉE<br>GOLD</h3>
+                        <p class="product-description">A partir de<br>R$ 12.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                </div>
+                <button class="carousel-nav next">›</button>
+            </div>
+        </div>
+
+        <div class="category" id="piagetdown">
+            <h2 class="category-title">Piaget</h2>
+            <div class="products-carousel" data-category="piaget">
+                <button class="carousel-nav prev">‹</button>
+                <div class="products-container">
+                    <a href="buying.html?id=piaget01">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Piaget-20250603T230544Z-1-001/01-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">POSSESSION RING<br>ROSE GOLD</h3>
+                        <p class="product-description">A partir de<br>R$ 14.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=piaget02">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Piaget-20250603T230544Z-1-001/02-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">PIAGET ROSE<br>COLLECTION</h3>
+                        <p class="product-description">A partir de<br>R$ 18.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=piaget03">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Piaget-20250603T230544Z-1-001/03-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">PIAGET SUNLIGHT<br>DIAMONDS</h3>
+                        <p class="product-description">A partir de<br>R$ 32.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=piaget04">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Piaget-20250603T230544Z-1-001/04flo-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">EXTREMELY PIAGET<br>COLLECTION</h3>
+                        <p class="product-description">A partir de<br>R$ 45.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                    <a href="buying.html?id=piaget05">
+                        <div class="product-card">
+                        <div class="product-image"><img src="IMG/Piaget-20250603T230544Z-1-001/05-removebg-preview.png" alt="Product"></div>
+                        <h3 class="product-name">GOLDEN OASIS<br>LUXURY</h3>
+                        <p class="product-description">A partir de<br>R$ 28.999</p>
+                        <div class="product-price"></div>
+                    </div>
+                    </a>
+                </div>
+                <button class="carousel-nav next">›</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NOSSA EMPRESA</h3>
+                <ul>
+                    <li>Sobre nós</li>
+                    <li>Nossa história</li>
+                    <li>Sustentabilidade</li>
+                    <li>Trabalhe conosco</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>ATENDIMENTO</h3>
+                <ul>
+                    <li>Central de ajuda</li>
+                    <li>Política de troca</li>
+                    <li>Garantia</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>REDES SOCIAIS</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Pinterest</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-logo">
+            <div class="logo">ASTRA</div>
+            <div class="tagline">JOIAS</div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
